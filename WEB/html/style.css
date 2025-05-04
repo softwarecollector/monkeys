@@ -1,0 +1,175 @@
+body { 
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1em 0;
+}
+
+main {
+  padding: 2em;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* Стилі для кнопок навігації */
+.nav-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: inline-block; /* Робимо, щоб це виглядало як кнопка */
+  text-align: center; /* Центруємо текст */
+  width: 100%; /* Розтягуємо кнопку на всю ширину */
+  box-sizing: border-box; /* Враховуємо відступи в ширині */
+}
+
+/* Стиль для hover-ефекту */
+.nav-button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #ddd;
+  padding: 1em 0;
+  margin-top: 2em;
+}
+
+.contact-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  overflow: hidden;
+  transition: width 0.3s ease, border-radius 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.phone-icon {
+  font-size: 20px;
+  transition: margin 0.3s ease;
+}
+
+.contact-label {
+  opacity: 0;
+  margin-left: 8px;
+  transform: translateX(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+}
+
+.contact-widget:hover {
+  width: 140px;
+  border-radius: 25px;
+}
+
+.contact-widget:hover .contact-inner {
+  justify-content: flex-start;
+  padding-left: 12px;
+}
+
+.contact-widget:hover .contact-label {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Стиль для таблиці */
+.monkey-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.monkey-table th, .monkey-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.monkey-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.monkey-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.monkey-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Стиль для зображень мавп */
+.monkey-image {
+  width: 80px;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+
+h2 {
+  color: #4CAF50;
+}
+
+figure {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+figure img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #ddd;
+  padding: 1em 0;
+  margin-top: 2em;
+}
